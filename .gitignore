@@ -1,4 +1,6 @@
 /venv
 *.env
-/python-files/tests/__pycache__/
-/python-files/__pycache__/
+/pythonfiles/tests/__pycache__/
+/pythonfiles/__pycache__/
+*.txt
+*.html
