@@ -1,2 +1,4 @@
 /venv
 *.env
+/python-files/tests/__pycache__/
+/python-files/__pycache__/
