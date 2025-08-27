@@ -1,2 +1,8 @@
 /venv
 *.env
+/pythonfiles/tests/__pycache__/
+/pythonfiles/__pycache__/
+*.html
+*test_random.py
+*data.md
+*requirements.in
