@@ -42,6 +42,7 @@ def scrape_data(url: str, stock_name:str) -> float:
             roce = soup.find_all('div', {'class': 'stat_value'})[6].text.strip()
             eps = soup.find_all('div', {'class': 'stat_value'})[7].text.strip()
             return {'PE': pe, 'Sector PE': sector_pe, 'PB Ratio': pb_ratio, 'Div Yield': div_yield, 'ROE': roe, 'EBIDATA': ebidata, 'ROCE': roce, 'EPS': eps}
+        
         except Exception as e:
             if e == IndexError:
                 print(f"{stock_name} ❌ Error parsing data: {e} - Possibly changed website structure")
