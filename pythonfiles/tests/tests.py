@@ -15,15 +15,17 @@ def scrape_data_test():
     url = 'https://zerodha.com/markets/stocks/NSE/TCS'
     stock_name = 'TCS'
     data = scrape_data(url, stock_name)
-    assert isinstance(data, dict)  # Check if the returned data is a dictionary
-    assert 'PE' in data  # Check if 'PE' key is in the returned dictionary
-    assert 'Sector PE' in data  # Check if 'Sector PE' key is in the returned dictionary
-    assert 'PB Ratio' in data  # Check if 'PB Ratio' key is in the returned dictionary
-    assert 'Div Yield' in data  # Check if 'Div Yield' key is in the returned dictionary
-    assert 'ROE' in data  # Check if 'ROE' key is in the returned dictionary
-    assert 'EBIDATA' in data  # Check if 'EBIDATA' key is in the returned dictionary
-    assert 'ROCE' in data  # Check if 'ROCE' key is in the returned dictionary
-    assert 'EPS' in data  # Check if 'EPS' key is in the returned dictionary
+
+    #Checks if the keys are present in the response
+    assert isinstance(data, dict) 
+    assert 'PE' in data 
+    assert 'Sector PE' in data 
+    assert 'PB Ratio' in data 
+    assert 'Div Yield' in data  
+    assert 'ROE' in data  
+    assert 'EBIDATA' in data 
+    assert 'ROCE' in data  
+    assert 'EPS' in data  
 
 
 def test_all():
